@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: ghostwhite;
+    --yellow: gold;
+}
+
+html,
+body {
+    background-color: var(--background-color);
+    font-size: 1.1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.valueContainer,
+.optionContainer,
+.result {
+    padding: 2em;
+}
+
+button#convert {
+    padding: 0.5em;
+    background-color: var(--yellow);
+}
+
+button#convert:hover {
+    filter: brightness(120%);
+}
+
+input#value {
+    padding: 10px;
+}
+
+h1 {
+    border-bottom: groove;
+    border-color: var(--yellow);
+}
+
+p.result {
+    background-color: blanchedalmond;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+select {
+    height: 2em
+}
+
+img.suncloud {
+    height: 10em;
+    position: absolute;
+}
+
+/* Media queries */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    html,
+    body {
+        font-size: 1.5em;
+    }
+
+}
